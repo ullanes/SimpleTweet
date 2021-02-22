@@ -2,9 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_margin="5dp"
+    android:background="#5A5454"
+    android:fadeScrollbars="false"
+    android:rotationY="0">
+
 
     <ImageView
         android:id="@+id/ivProfileImage"
@@ -22,7 +27,9 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        android:text="TextView" />
+        android:fontFamily="@font/bangers"
+        android:text="TextView"
+        android:textColor="#04F1CD" />
 
     <TextView
         android:id="@+id/tvBody"
@@ -32,19 +39,27 @@
         android:layout_marginStart="7dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0AF112"
+        android:autoLink="all"
+        android:linksClickable="true"
         tools:text="This is my sample" />
 
     <TextView
         android:id="@+id/timestamp"
-        android:layout_width="79dp"
-        android:layout_height="23dp"
+        android:layout_width="92dp"
+        android:layout_height="25dp"
         android:layout_above="@+id/tvBody"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="205dp"
-        android:layout_marginBottom="-5dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="202dp"
+        android:layout_marginBottom="-2dp"
         android:layout_toEndOf="@+id/tvScreenName"
-        android:text="TextView" />
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="TextView"
+        android:textColor="#D8C40A"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 </RelativeLayout>
